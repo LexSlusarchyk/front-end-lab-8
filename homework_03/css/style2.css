@@ -1,0 +1,35 @@
+body #content {
+  width: 960px;
+  margin: 0 auto;
+  padding: 25px; }
+  body #content h1 {
+    text-align: center; }
+  body #content img {
+    border: 2px solid;
+    padding: 2px; }
+  body #content .brief {
+    float: left;
+    width: 380px;
+    padding: 20px;
+    margin-right: 20px; }
+  body #content .img-right {
+    float: right;
+    margin-left: 25px; }
+  body #content .img-left {
+    float: left;
+    margin-right: 25px; }
+  body #content table {
+    border-collapse: collapse; }
+    body #content table caption {
+      text-align: right; }
+    body #content table th {
+      text-align: left;
+      font-weight: normal;
+      text-transform: uppercase;
+      padding: 10px 20px; }
+    body #content table th:nth-child(2) {
+      border-right: 1px solid;
+      border-left: 1px solid; }
+    body #content table td {
+      padding: 10px 10px 10px 20px;
+      border-bottom: 1px solid; }

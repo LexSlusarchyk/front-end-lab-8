@@ -1,0 +1,79 @@
+$bodyBackground: null !default;
+$contentBackground: null !default;
+$titleColor:null !default;
+$briefBackground:null !default;
+$thBackgr:null !default;
+
+
+body {
+  background: $bodyBackground;
+
+    #content {
+      width: 960px;
+      margin: 0 auto;
+      background: $contentBackground;
+      padding: 25px;
+
+      h1 {
+	    text-align: center;
+      }
+
+      h1, h2 {
+	    color: $titleColor;
+      }
+
+      img {
+      	border: 2px solid $titleColor;
+      	padding: 2px;
+      }
+
+      .brief {
+      	background:$briefBackground;
+     	float: left;
+     	width: 380px;
+     	padding: 20px;
+     	margin-right: 20px;
+
+
+      }
+
+      .img-right {
+      	float: right;
+      	margin-left: 25px;
+      }
+
+      .img-left {
+      	float: left;
+      	margin-right: 25px;
+      }
+
+      table {
+      	border-collapse: collapse;
+
+        caption {
+          text-align: right;
+        }
+
+        th {
+          background: $thBackgr;
+          text-align: left;
+          font-weight: normal;
+          text-transform: uppercase;
+          padding: 10px 20px;
+        }
+
+        th:nth-child(2) {
+          border-right: 1px solid $contentBackground;
+          border-left: 1px solid $contentBackground;
+        }
+
+        td {
+          padding: 10px 10px 10px 20px;
+          border-bottom: 1px solid $thBackgr;
+        }
+
+      }
+
+
+    }
+}
