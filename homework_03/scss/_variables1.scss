@@ -1,8 +1,20 @@
-
 $bodyBackground: #dcbb9a;
 $contentBackground: #ffffff;
 $titleColor: #893c00;
-$briefBackground: #fadcba;
-$thBackgr:#e0e0e0;
+$thBackgr: #e0e0e0;
+$thBorderCol: #ffffff;
+$labelCol: #808080;
+$subButCol: #3d70a1;
+$linkColor: #3d70a1;
+
+
+@mixin brief-manner {
+  background:#fadcba;
+  float: left;
+  width: 380px;
+  padding: 20px;
+  margin-right: 20px;
+}
+
 
 

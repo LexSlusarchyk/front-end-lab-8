@@ -1,12 +1,28 @@
+//Common
 $bodyBackground: null !default;
 $contentBackground: null !default;
-$titleColor:null !default;
-$briefBackground:null !default;
-$thBackgr:null !default;
+$titleColor: null !default;
+$thBackgr: null !default;
+$labelCol: null !default;
+$subButCol: null !default;
+$linkColor: null !default;
+$thBorderCol: null !default;
+
+//for style2
+$titleUpp: null !default;
+$contentColor: null !default;
+$tdBackgr: null !default;
+
 
 
 body {
   background: $bodyBackground;
+  p {
+    color: $contentColor;
+  }
+  a {
+    color: $linkColor;
+  }
 
     #content {
       width: 960px;
@@ -15,11 +31,12 @@ body {
       padding: 25px;
 
       h1 {
-	    text-align: center;
+	      text-align: center;
+        text-transform: $titleUpp;
       }
 
       h1, h2 {
-	    color: $titleColor;
+	      color: $titleColor;
       }
 
       img {
@@ -28,13 +45,7 @@ body {
       }
 
       .brief {
-      	background:$briefBackground;
-     	float: left;
-     	width: 380px;
-     	padding: 20px;
-     	margin-right: 20px;
-
-
+        @include brief-manner;
       }
 
       .img-right {
@@ -45,6 +56,7 @@ body {
       .img-left {
       	float: left;
       	margin-right: 25px;
+        margin-bottom: 10px;
       }
 
       table {
@@ -63,17 +75,56 @@ body {
         }
 
         th:nth-child(2) {
-          border-right: 1px solid $contentBackground;
-          border-left: 1px solid $contentBackground;
+          border-right: 1px solid $thBorderCol;
+          border-left: 1px solid $thBorderCol;
         }
 
         td {
           padding: 10px 10px 10px 20px;
           border-bottom: 1px solid $thBackgr;
+          background: $tdBackgr;
+          color: $contentColor;
+        }
+      }
+
+      form {
+
+        .fname {
+          float: left;
+          width: 49%;         
+        }
+
+        .lname {
+          float: right;
+          width: 49%;
+        }
+
+        label {
+          color: $labelCol;
+        }
+
+        label, input[type=submit] {
+          text-transform: uppercase;
+        }
+
+        input, textarea {
+          width: 100%;
+          margin: 5px 0 13px 0;
+        }
+
+        input {
+          padding: 3px;
+        }
+
+        input[type=submit] {
+          width: 24%;
+          padding: 12px 0;
+          font-size: 1.1em;
+          background: $contentBackground;
+          color: $subButCol;
+          border: 1.5px solid $subButCol;
         }
 
       }
-
-
     }
 }

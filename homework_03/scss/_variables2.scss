@@ -1,0 +1,17 @@
+$bodyBackground: rgba(198, 238, 252, 0.53);
+$contentBackground: #3b3b3b;
+$titleColor: #fccd10;
+$titleUpp: uppercase;
+$thBackgr: #94a34e;
+$thBorderCol: #ffffff;
+$tdBackgr: #677d01;
+$contentColor: #ffffff;
+$labelCol: #f5c70f;
+$linkColor: #fccd10;
+$subButCol: #f5c70f;
+
+@mixin brief-manner {
+  background:#fff178;
+  padding: 20px;
+  margin-bottom: 30px;
+}

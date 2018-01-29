@@ -1,5 +1,7 @@
 body {
   background: #dcbb9a; }
+  body a {
+    color: #3d70a1; }
   body #content {
     width: 960px;
     margin: 0 auto;
@@ -23,7 +25,8 @@ body {
       margin-left: 25px; }
     body #content .img-left {
       float: left;
-      margin-right: 25px; }
+      margin-right: 25px;
+      margin-bottom: 10px; }
     body #content table {
       border-collapse: collapse; }
       body #content table caption {
@@ -40,3 +43,25 @@ body {
       body #content table td {
         padding: 10px 10px 10px 20px;
         border-bottom: 1px solid #e0e0e0; }
+    body #content form .fname {
+      float: left;
+      width: 49%; }
+    body #content form .lname {
+      float: right;
+      width: 49%; }
+    body #content form label {
+      color: #808080; }
+    body #content form label, body #content form input[type=submit] {
+      text-transform: uppercase; }
+    body #content form input, body #content form textarea {
+      width: 100%;
+      margin: 5px 0 13px 0; }
+    body #content form input {
+      padding: 3px; }
+    body #content form input[type=submit] {
+      width: 24%;
+      padding: 12px 0;
+      font-size: 1.1em;
+      background: #ffffff;
+      color: #3d70a1;
+      border: 1.5px solid #3d70a1; }
