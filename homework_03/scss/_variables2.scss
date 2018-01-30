@@ -7,11 +7,10 @@ $thBorderCol: #ffffff;
 $tdBackgr: #677d01;
 $contentColor: #ffffff;
 $labelCol: #f5c70f;
-$linkColor: #fccd10;
+$linkColor: $titleColor;
 $subButCol: #f5c70f;
 
-@mixin brief-manner {
-  background:#fff178;
-  padding: 20px;
-  margin-bottom: 30px;
-}
+
+// for brief mixin
+$briefBg: #fff178;
+$briefMargin: 0 0 30px 0;

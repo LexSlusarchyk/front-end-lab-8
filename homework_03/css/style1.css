@@ -15,11 +15,11 @@ body {
       border: 2px solid #893c00;
       padding: 2px; }
     body #content .brief {
+      padding: 20px;
       background: #fadcba;
       float: left;
       width: 380px;
-      padding: 20px;
-      margin-right: 20px; }
+      margin: 0 20px 0 0; }
     body #content .img-right {
       float: right;
       margin-left: 25px; }

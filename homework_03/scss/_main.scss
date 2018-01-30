@@ -13,6 +13,19 @@ $titleUpp: null !default;
 $contentColor: null !default;
 $tdBackgr: null !default;
 
+// for brief mixin
+$briefBg: null !default;
+$briefFloat: null !default;
+$briefWidth: null !default;
+$briefMargin: null !default;
+
+
+@mixin brief-manner {
+  background:$briefBg;
+  float: $briefFloat;
+  width: $briefWidth;
+  margin: $briefMargin;
+}
 
 
 body {
@@ -45,6 +58,7 @@ body {
       }
 
       .brief {
+        padding: 20px;
         @include brief-manner;
       }
 

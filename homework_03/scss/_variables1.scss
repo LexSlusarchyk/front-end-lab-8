@@ -4,17 +4,13 @@ $titleColor: #893c00;
 $thBackgr: #e0e0e0;
 $thBorderCol: #ffffff;
 $labelCol: #808080;
-$subButCol: #3d70a1;
 $linkColor: #3d70a1;
+$subButCol: $linkColor;
 
 
-@mixin brief-manner {
-  background:#fadcba;
-  float: left;
-  width: 380px;
-  padding: 20px;
-  margin-right: 20px;
-}
-
-
+// for brief mixin
+$briefBg: #fadcba;
+$briefFloat: left;
+$briefWidth: 380px;
+$briefMargin: 0 20px 0 0;
 

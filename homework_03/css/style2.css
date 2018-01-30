@@ -18,9 +18,9 @@ body {
       border: 2px solid #fccd10;
       padding: 2px; }
     body #content .brief {
-      background: #fff178;
       padding: 20px;
-      margin-bottom: 30px; }
+      background: #fff178;
+      margin: 0 0 30px 0; }
     body #content .img-right {
       float: right;
       margin-left: 25px; }
