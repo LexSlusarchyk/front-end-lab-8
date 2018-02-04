@@ -1,0 +1,288 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: url("../img/apples.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center; 
+  color: white;
+  width: 100%;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 26px;
+}
+
+nav {
+  display: flex;
+  align-content: flex-start;
+  margin: 0 10%;
+}
+
+nav ul {
+  margin-left: auto;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 30px; 
+  padding: 10px;
+  border-bottom: 1.5px transparent solid;
+}
+
+ul li:last-child {
+  margin-right: 100px;
+}
+
+li:hover {
+  border-bottom: 1.5px #B7C8D9 solid;
+   padding-bottom: 10px;
+
+}
+
+header section {
+  margin: 200px auto 0 auto;
+}
+
+header section p {
+  margin-top: 0;
+}
+
+.tm {
+  margin-left: 3%;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 1.7em;
+}
+
+.thHeading {
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.thHeading::after {
+  content: '\2122'
+  
+}
+
+.and {
+  font-size: 90px;
+}
+
+button {
+  padding: 19px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 190px auto 100px auto;
+  cursor: pointer;
+  background-color:rgba(0,0,0,0.55);
+  color: white;
+  border: 1.5px solid white;
+  width: 240px;
+}
+
+  /*main*/
+.gridMain {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 0;
+  padding: 100px;
+}
+
+main p {
+  text-align: justify;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.articleHeading {
+  text-align: center;
+  font-weight: normal;
+}
+
+  /*featured*/
+.featured {
+  background-color:#F3F3F3;
+  padding: 100px 0 80px 0;
+  
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  padding: 10px;
+  margin: 50px 10% 0 10%;
+  color: white;
+}
+.article1, .article2, .article3, .article4 {
+  box-shadow: inset 0px -50px 200px -50px #000;
+}
+
+.article1 { 
+  grid-area: 1 / 1 / 2 / 3;
+  background: url("../img/sample.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%; 
+
+}
+.article2 { 
+  grid-area: 1 / 3 / 2 / 4;
+  background: url("../img/sample2.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;
+}
+.article3 { 
+  grid-area: 2 / 1 / 3 / 2;
+  background: url("../img/sample2.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%; 
+}
+.article4 { 
+  grid-area: 2 / 2 / 3 / 4;
+  background: url("../img/sample3.jpg") no-repeat center;
+  background-size: cover;
+  width: 100%;  
+}
+.like {
+  margin: 20px 20px 100px 0;
+  width: 50px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  color: #fff;
+  padding: 10px;
+  float: right;
+ 
+}
+
+.location {
+  margin: 200px 0 30px 40px;
+}
+
+  /*subscribe*/
+
+.subscribe {
+  height: 60px;
+  margin: 60px 10.6% 10px 10.6%;
+
+  padding: 50px 80px;
+  background-color: #FFF;
+}
+
+.subscribe > p {
+  font-size: 1.1em;
+  float: left;
+  margin: 18px 0 0 0;
+  padding-right: 20px;
+  width: 35%;
+}
+
+.subscribe > form {
+  float: right;
+  padding-top: 9px;
+  width: 60%;
+}
+
+.email {
+  display: flex;
+}
+
+.email > a {
+  font-size: 0.7em;
+  color: #E8E8E8;
+  padding: 14px 45px;
+  text-decoration: none;
+  position: relative;
+  right: 15px;
+  background-color: #343638;
+}
+
+.email > input {
+  width: 60%;
+  height: 35px;
+  padding: 6px 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+  border: 1px solid #343638;
+  background-color: #E8E8E8;
+}
+
+  /*footer*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  grid-column-gap: 65px;
+  padding: 100px 0;
+  border-bottom: 2px solid #F0F0F0;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.grid-container > div > p {
+  
+  color: #A4A4A4;
+}
+
+#hago {
+  color:#E8E8E8;
+}
+
+.bAw, .nletter {
+  line-height: 25px;
+}
+
+.nletter div {
+  width: 100%;
+  padding-top: 15px;
+}
+
+.nletter div input[type="text"] {
+  font-size: 0.7em;
+  width: 38%;
+  padding:12px 20px;
+  border: 1px solid #343638;
+  background-color: #F3F3F3;
+  font-style: italic; 
+}
+
+.nletter div input[type="submit"] {
+  font-size: 0.7em;
+  padding: 14px 0;
+  color: #E8E8E8;
+  width: 30%;
+  position: relative;
+  right: 15px;
+  background-color: #343638;
+  text-decoration: none;
+  border:none;
+}
+
+footer nav {
+  margin: 0 4% 0 11.5%;
+}
+footer nav p {
+  color: #A4A4A4;
+  padding-top: 10px;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
