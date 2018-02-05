@@ -4,35 +4,29 @@
   box-sizing: border-box;
 }
 
-
 body {
   font: 14px/1.2 Arial, Helvetica, sans-serif;
 }
 
-
-
-
-header {
-  display: flex;
-  max-width: 960px;
-  width: 100%;
-  padding: 20px 0 15px 0;
-  display: flex;
-  align-items: center;
+header, .banTxt, main, footer nav {
+  max-width: 990px;
   margin: auto;
 }
 
-header img {
-  margin-bottom: 10px;
+header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
 }
 
 header nav {
-  display: flex;
   margin-left: 30px;
   margin-bottom: 7px;
+  display: flex;
 }
 
-header nav ul li {
+header nav ul li, footer nav ul li {
   display: inline-block;
 }
 
@@ -49,24 +43,135 @@ header nav ul li a:hover {
   color: #39c2d7;
 }
 
+.ban {
+  background: url(../img/banner.jpg) center no-repeat;
+  background-size: cover;
+  height: 419px;
+  width: 100%;
+  margin: auto;
+}
+
+.banTxt {
+  padding-top: 50px;
+}
+
+.banHeader {
+  max-width: 390px;
+  font-weight: normal;
+  font-size: 45px;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+main > article {
+  background-color: #cccccc;
+  
+  padding: 13px 13px 30px 13px; 
+}
+
+main > article:hover {
+  background-color: #39c2d7;
+}
+
+main article a {
+  text-decoration: none;
+  color: black;
+}
+
+main img, main h3 {
+  padding-bottom: 9px;
+}
+
+main img {
+  width: 100%;
+  max-height: 160px;
+}
+
+footer {
+  background-color: #39c2d7;
+  width: 100%;
+}
+
+footer nav {
+  color: white;
+  font-weight: bold;
+  padding: 20px 0;
+  display: flex;
+  font-weight: bold;
+}
+
+footer nav ul li a {
+  color: white;
+  padding-right: 20px;
+}
+
+footer nav ul li a:hover {
+  text-decoration: none;
+}
 
 
-
-@media (max-width: 899px) and (min-width: 575px) {
+@media screen and (min-width: 575px) and (max-width: 899px)  {
 
   header {
     flex-direction: column;
     padding: 27px 0 15px 0;
+    margin-left:;
   }
 
+  header img {
+  	margin-bottom: 15px;
+  }
 
+  header nav ul li a {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .ban {
+  	height: 535px;
+  }
+
+  .banHeader {
+  	font-size: 21px;
+    text-align: center;
+    margin: auto;
+  }
+
+  main {
+  	grid-template-columns: auto auto;
+  	padding: 20px 20px;
+  }
+
+  main img {
+  	max-width: 300px;
+  	margin: 0 auto;
+  	display: block;
+  }
+
+  footer nav {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  footer nav ul {
+    padding-bottom: 20px;
+  }
 
 }
 
-/*574 not working*/
-@media (max-width: 575px) {
+
+@media screen and (max-width: 574px) {
   header {
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   header nav ul {
@@ -78,13 +183,56 @@ header nav ul li a:hover {
   header nav {
     width: 100%;
     margin-left: 0;
+    margin-bottom: 0;
   }
 
   header nav ul li {
-      padding: 2% 2%;
-      width: 100%;
-      border-top: 1px solid #CCCCCC;
-      background-color: #EEEEEE;
+    padding: 2% 2%;
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+    background-color: #EEEEEE;
+  }
+
+  header img {
+  	margin-bottom: 15px;
+  }
+
+  .ban {
+    height: 248px;
+    
+  }
+
+  .banHeader {
+  	font-size: 20px;
+  	font-weight: bold;
+    margin: auto;
+    background: #39c2d7;  
+  }
+
+  main {
+  	grid-template-columns: auto;
+  	padding: 20px 20px;
+  }
+
+  main img {
+  	max-width: 400px;
+  	margin: 0 auto;
+  	display: block;
+  }
+
+  footer nav {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  footer nav ul {
+    padding-bottom: 20px;
+  }
+
+  footer nav ul li {
+    display: block;
+    padding: 2px;
   }
 
 }
