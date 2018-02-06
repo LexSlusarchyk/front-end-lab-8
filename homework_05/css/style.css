@@ -116,13 +116,13 @@ footer nav ul li a:hover {
   text-decoration: none;
 }
 
+	/*tablet*/
 
 @media screen and (min-width: 575px) and (max-width: 899px)  {
 
   header {
     flex-direction: column;
     padding: 27px 0 15px 0;
-    margin-left:;
   }
 
   header img {
@@ -167,6 +167,7 @@ footer nav ul li a:hover {
 
 }
 
+	/*mobile*/
 
 @media screen and (max-width: 574px) {
   header {
@@ -187,10 +188,14 @@ footer nav ul li a:hover {
   }
 
   header nav ul li {
-    padding: 2% 2%;
+    padding: 2% 20px 2% 20px;
     width: 100%;
     border-top: 1px solid #CCCCCC;
     background-color: #EEEEEE;
+  }
+
+  header nav ul li a {
+    margin-left: 0;
   }
 
   header img {
@@ -198,15 +203,23 @@ footer nav ul li a:hover {
   }
 
   .ban {
-    height: 248px;
-    
+    height: 368px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .banTxt {
+  	padding: 0 20px 0 20px;
+  	margin: 0 auto 20px auto;
   }
 
   .banHeader {
-  	font-size: 20px;
+  	font-size: 24px;
   	font-weight: bold;
+  	max-width: 100%;
     margin: auto;
-    background: #39c2d7;  
+    background: #39c2d7;
+    padding: 7px;  
   }
 
   main {
@@ -215,7 +228,8 @@ footer nav ul li a:hover {
   }
 
   main img {
-  	max-width: 400px;
+  	max-width: 455px;
+  	max-height: 455px;
   	margin: 0 auto;
   	display: block;
   }
@@ -234,5 +248,4 @@ footer nav ul li a:hover {
     display: block;
     padding: 2px;
   }
-
 }
