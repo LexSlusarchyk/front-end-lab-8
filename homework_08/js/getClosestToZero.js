@@ -7,7 +7,7 @@ function getClosestToZero () {
 
 	for (var argument = 0; argument <= arguments.length-1; argument++){   //arguments.length-1 to cut off undefined		
 		var newDifference = Math.abs(ClosestToZero - arguments[argument]);
-		if (newDifference < ClosestToZero){
+		if (newDifference < differnce){
 			ClosestToZero = arguments[argument];
 		}
 	}
