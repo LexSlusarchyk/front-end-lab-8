@@ -1,21 +1,15 @@
 'use strict';  
 
-function reverseNumber () {
+function reverseNumber (integer) {
 
 	let viceversa = null;
+	integer = integer + "";
 
-	let esrever = [];
-
-	let stringArgument = "";
-
-	stringArgument = arguments[0];
-
-	for (i = 0; i < stringArgument.length; i++){
-		esrever.push(stringArgument[i]);
-	}
-
-	console.log(esrever);
+    if (integer > 0){				//("") is used as the separator, the string is split between each character
+    	viceversa = +integer.split("").reverse().join("");
+    	return viceversa;
+    } else {
+    	viceversa = +("-" + integer.split("").reverse().join("").slice(0,-1));
+    	return viceversa;
+    }
 }
-
-
-//Demo !!!

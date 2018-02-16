@@ -2,14 +2,11 @@
 
 function isPrime (integer) {
 
-	return (integer % 2 === 0) ? true : false;
+	for(var i = 2; i < integer; i++) {
+        if(integer % i === 0) {
+            return false;
+        }
+    }
+    return integer > 1;
 }
 
-
-/*
-if(integer % 2 === 0){
-	return true;
-} else {
-	return false;
-}
-*/
