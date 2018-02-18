@@ -1,13 +1,13 @@
 'use strict';  
 
-function increment(num) { 
-return num + 1;
-} 
-
-
 function getTransformedArray (someArray, someFunction) {
 	
-	let newArray = forEach(someArray, someFunction);
+	let newArray = [];
+
+	forEach(someArray, function (item){
+		newArray.push(someFunction(item))
+		}
+	);
 
 	return newArray;
 }
