@@ -31,10 +31,6 @@ function showResult(fighter) {
   console.log('- Properties:', fighter.getStats());
 }
 
-/**
- * Your code goes here
- * function foo() { ... }
- */
 function fighter(properties) {
   let fighter = {};
 
