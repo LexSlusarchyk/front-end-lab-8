@@ -22,7 +22,7 @@ function printIteratorValue() {
   console.log('Iterator value ', iterator);
 }
 
-var increaseIterator = debounce(increaseIteratorBy1, 1000);
+const increaseIterator = debounce(increaseIteratorBy1, 1000);
 
 increaseIterator();
 increaseIterator();
