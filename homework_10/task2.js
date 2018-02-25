@@ -32,14 +32,47 @@ function showResult(fighter) {
 }
 
 function fighter(properties) {
+  let combatHistory = { wins: 0, loses: 0 };
+  let stats = properties;
+  const fighterMethods = {};
+
+  fighterMethods.getName = function(){ return stats.name; };
+  fighterMethods.getCombatHistory = function(){ return combatHistory; };
+  fighterMethods.getStats = function(){ return stats; };
+
+  fighterMethods.fight = function(rival){
+   	if(!rival.block()){
+      rival.getStats().hp -= stats.attack;
+      if(rival.getStats().hp <= 0){
+      	rival.getStats().hp = 0;
+      	rival.getCombatHistory().loses++;
+      	combatHistory.wins++;
+      }
+      return true;
+    } else {
+    	console.log(`${rival.getName()} blocked damage from ${this.getName()}`);
+    	return false;
+    }
+  };
+
+  fighterMethods.block = function(){
+    return Math.random() >= 0.5; 
+  };
+
+  return fighterMethods;
+}
+
+//I love this way =)
+/* 
+function fighter(properties) {
   let fighter = {};
 
-  fighter.combatHistory = { wins: 0, loses: 0 }
+  fighter.combatHistory = { wins: 0, loses: 0 };
   fighter.stats = properties;
-
-  fighter.getName = function(){ return this.stats.name };
-  fighter.getCombatHistory = function(){ return this.combatHistory };
-  fighter.getStats = function(){ return this.stats };
+  
+  fighter.getName = function(){ return this.stats.name; };
+  fighter.getCombatHistory = function(){ return this.combatHistory; };
+  fighter.getStats = function(){ return this.stats; };
 
   fighter.fight = function(rival){
   	if(!rival.block()){
@@ -58,6 +91,7 @@ function fighter(properties) {
 
   return fighter;
 }
+*/
 
 /**
  * The following code must be valid after implementation!
