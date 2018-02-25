@@ -1,0 +1,32 @@
+/* Your styles goes here */
+li ul {
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+ul {
+  padding-left: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+ul li div {
+  padding: 1px;
+  display: flex;
+  align-items: flex-end;
+}
+
+ul li div:hover { 
+  background-color: lightgrey;
+}
+
+.material-icons{
+  color: darkgrey;
+}
+
+.material-icons.folder{
+  color: gold;
+}
