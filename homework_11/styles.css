@@ -3,10 +3,6 @@ li ul {
   display: none;
 }
 
-.show{
-  display: block;
-}
-
 ul {
   padding-left: 12px;
   cursor: pointer;

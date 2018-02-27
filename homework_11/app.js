@@ -46,7 +46,12 @@ function toggleShow(element){
   } else {
     element.childNodes[0].innerHTML = "folder";
   }
-  element.parentElement.childNodes[1].classList.toggle('show');
+  
+  if(element.parentElement.childNodes[1].style.display === 'block'){
+    element.parentElement.childNodes[1].style.display='none';
+  } else {
+    element.parentElement.childNodes[1].style.display='block';
+  }
 }
 
 rootNode.appendChild(tree);
