@@ -5,7 +5,7 @@
   font-family: serif;
 }
 body {
-  color: white;
+  color: #A19E86;
   background-color: #1C1C1F;
 }
 
@@ -13,15 +13,21 @@ h1 {
   margin-left: 10px;
 }
 
+a {
+  text-decoration: none;
+  color: #A19E86;
+}
+
 .tanksColection {
+  margin-top: 50px;
   display: flex;
   flex-flow: row wrap;
   padding: 0 8% 0 25px;
-  
 }
 
 .tank:hover {
   background-color: #2C2C2C;
+  cursor: pointer;
 }
 
 .tank>img {
@@ -37,10 +43,6 @@ h1 {
   padding: 15px;
 }
 
-.tank-desc>img {
-  
-}
-
 .tank-desc h4 {
   padding-left: 5px;
   white-space: nowrap;
@@ -49,21 +51,43 @@ h1 {
   font-weight: bold;
 }
 
+span {
+  color: #D7D2B7;
+}
+
 /*Tank details*/
+.description {
+  padding: 10px;
+}
+
+.description > h1 {
+  display: inline-block; 
+}
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  padding: 0 7px;
+}
+
+.containerGrid>div>img {
+  display: block;
+}
+
 table {
-  width: 50%;
+  width: 100%;
   border-collapse: collapse; 
 }
 
 table caption {
   text-align: left;
-  padding-bottom: 10px;
-  font-size: 20px;
+  padding-bottom: 20px;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 table td {
-  border: 1px solid white;
+  border: 1px solid #A19E86;
   padding: 10px;
-
+  color: #D7D2B7;
 }
