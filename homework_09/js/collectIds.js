@@ -1,19 +1,17 @@
 'use strict';  
 
 function collectIds (movies) {
-	
-	let ratingArray = [];
 
-	getFilteredArray(movies, function (element){
-		if(element.rating > 3){
-			ratingArray.push(element);
-		}	
-	});
+  let ratingArray = getFilteredArray(movies, function(element){
+  	return element.rating > 3;
+    }
+  );
 
-	ratingArray = getTransformedArray (ratingArray, function(element){
-		return element.id;
-	});
+  let filteredId = getTransformedArray (ratingArray, function(element){
+    return element.id;
+    }
+  );
 
-	return ratingArray;
+  return filteredId;
 
 }

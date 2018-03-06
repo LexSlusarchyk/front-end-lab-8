@@ -2,14 +2,8 @@
 
 function cypherPhrase (someObject, someString) {
 	
-	someString = someString.split('');
-	return getTransformedArray (someString, function(item){
-
-		for (let key in someObject){
-			if (item === key){
-				item = someObject[key];
-			} 
-		}
-		return item;
-	}).join('');     
+  let cypherStr = getTransformedArray(someString, (item) =>
+    someObject[item] ? someObject[item] : item
+  );
+  return cypherStr.join("");     
 }
